@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap-grid.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="description" content="Personal projects and portfolio of me">
+	<meta name="keywords" content="Data analytics, Fusion 360, Wood working">
+	<meta name="author" content="Jaroslav Kvasnicka">
+</head>
+<body>
+
+<div class="bgimg">
+
+	<header>
+	<div class=".container-fluid"> 
+		<div class="row">
+		<div class="col">
+		<p class="topleft">Portfolio & Personal projects</p>
+		</div>
+	  <div class="col-1">
+	  <nav>
+			<div class="hamburger-menu" style="text-align: center;">
+				<input id="menu__toggle" type="checkbox" />
+				<label class="menu__btn" for="menu__toggle">
+				  <span></span>
+				</label>
+
+				<ul class="menu__box">
+				  <li><a class="menu__item"  href="./index.html">Home</a></li>
+						<li><a class="menu__item" href="#">About</a></li>
+						<li><a class="menu__item" href="#">Personal projects</a></li>
+						<li><a class="menu__item" href="#">Portfolio</a></li>
+						<li><a class="menu__item" href="https://www.linkedin.com/in/j-kvasnicka">LinkedIn</a></li>
+				</ul>
+			  </div>
+
+	  </nav>
+	  </div>
+	  </div>
+	  </div>
+	</header>
+	
+	<main>
+	  <div class="middle">
+		<h1>WORK IN PROGRESS</h1>
+		<hr>
+		<p>Since the beginning of work on this site:</p>
+		<p id="demoscript" style="font-size:30px"></p>
+	  </div>
+	</main>
+	
+	<footer>
+	  <div class="bottomleft">
+		<p>by <a href="https://www.linkedin.com/in/j-kvasnicka" style="animation: flicker 1.5s infinite alternate;">Jaroslav Kvasnicka</a></p>
+	  </div>
+	</footer>
+</div>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jun 16, 2023 10:37:25").getTime();
+
+// Update the count down every 1 second
+var countdownfunction = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+  
+  // Find the distance between now an the count down date
+  var distance = now - countDownDate;
+  
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+  // Output the result in an element with id="demoscript"
+  document.getElementById("demoscript").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+  
+}, 1000);
+
+	
+</script>
+
+</body>
+</html>
+	

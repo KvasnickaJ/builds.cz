@@ -5,8 +5,6 @@ Personal project &amp; portfolio website
 						<br>
 						<br>All notable changes to this website will be documented in this page.
 						<br>The format is based on <a href="https://keepachangelog.com/en/1.0.0/"  style="color:white;">[Keep a Changelog]</a>
-						<br>
-						<br>
 						<br><br><br>## [Unreleased]
 						<br><br><br>## 2024-02-02
 						<br><br>### Added

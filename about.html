@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+   <head>
+		<!--Project start 2023-02-07-->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="description" content="Personal projects and portfolio of me">
+		<meta name="keywords" content="Data analytics, Fusion 360, Wood working">
+		<meta name="author" content="Jaroslav Kvasnicka">
+		<link rel="stylesheet" type="text/css" href="CSS/mystyle.css">
+		<link rel="stylesheet" type="text/css" href="CSS/bootstrap-grid.css">
+		<script src="JS/jk_scripts.js"></script>
+      <script>
+         // Define dataLayer and the gtag function.
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         
+         // Set default consent to 'denied' as a placeholder
+         // Determine actual values based on your own requirements
+         if(localStorage.getItem('consentMode') === null){
+         	gtag('consent', 'default', {
+         	  'ad_storage': 'denied',
+         	  'ad_user_data': 'denied',
+         	  'ad_personalization': 'denied',
+         	  'analytics_storage': 'denied'
+         	});
+         	console.log("CookieLoad", "No");
+         }else{
+         	console.log("CookieLoad", "yes");
+         	gtag('consent', 'default',JSON.parse(localStorage.getItem('consentMode')));
+         
+         }
+      </script>
+      <!-- Google tag (gtag.js) -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-RD8TKV5Q51"></script>
+      <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());         
+         gtag('config', 'G-RD8TKV5Q51');
+         function consentGrantedAdStorage() {
+         gtag('consent', 'update', {
+          'analytics_storage': 'granted'
+         });
+         localStorage.setItem('consentMode',JSON.stringify({'analytics_storage': 'granted'}));
+         document.getElementById('cookie_consent').style.display = 'none';
+         }
+         function hideBanner(){
+         document.getElementById('cookie_consent').style.display = 'none';
+         }
+         
+      </script>
+   </head>
+   <body style="opacity: 0; transition: opacity 1s;">
+      <div class="bgimg">
+         <hgroup onload="bannerVisibility()">
+            <div id="cookie_consent" class="cookie_consent_container" style="display:flex;">
+               <p style="margin:1em"> I use <a href="./cookies.html">cookies</a> on my site, just to see if anyone visits: </p>
+               <button onClick="hideBanner()" class="cookie_consent_button" style="background-color:DarkGray;">Decline</button>
+               <button onClick="consentGrantedAdStorage()" class="cookie_consent_button" style="background-color:OliveDrab;">Allow Cookies</button>
+            </div>
+         </hgroup>
+      <header>
+         <nav>
+            <div class=".container-fluid">
+            <div class="row">
+               <div class="col">
+                  <p class="topleft">Portfolio & Personal projects</p>
+               </div>
+               <div class="col-1">
+                  <div class="hamburger-menu" style="text-align: center;">
+                     <input id="menu__toggle" type="checkbox" />
+                     <label class="menu__btn" for="menu__toggle">
+                     <span></span>
+                     </label>
+                     <ul class="menu__box">
+                        <li><span onclick="transitionToPage('./index.html')" class="menu__item">Home</span></li>
+                        <li><span onclick="transitionToPage('./about.html')" class="menu__item">About Me</span></li>
+                        <li><span onclick="transitionToPage('./portfolio.html')" class="menu__item">Portfolio</span></li>
+                        <li><span onclick="transitionToPage('./personalprojects.html')" class="menu__item">Personal projects</span></li>
+						<li><span onclick="transitionToPage('./changelog.html')" class="menu__item">Website changelog</span></li>
+                        <li><a class="menu__item" href="https://www.linkedin.com/in/j-kvasnicka">LinkedIn</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </nav>
+         <div style="min-height:70px; min-width:70px; position:absolute;"></div>
+      </header>
+      <main>
+         <div style="position:relative; font-size:20px;text-align: justify;
+            text-justify: inter-word;">
+         <div class="row"><br>
+         </div>
+         <div class="row">
+            <div class="col-4"> 
+               <img src="images/ProfilePictureNoBackground.png" alt="Profile picture" class="about_img"> 
+            </div>
+            <div class="col-8">
+               <h1>Hi, I'm Jaroslav </h1>
+               <p >Over the past 4+ years, I've worked in various areas of Business inteligence including manufacturing, digital product and investments. I am hungre for knowlage and explored various fields during my studies and career and use my experience in various projects. This website was created to show where my passions and curiosity lead me in life.
+               </p>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-8">
+               <h3>Study live</h3>
+               <p>
+                  The field of my education is Electrotechnical engineering from which I gained a Master's degree in. 
+                  The main focus of my studies was all over the place due to my curious mind and I studied something from Music thru Networking to Biomedicine. But the main focus was Fyziotherapy and Programming. 
+                  Assembler, C, C++, FPGA, LabView, CSS, HTML, Java and XML were languages I came across even my bachelor's thesis topic was Applications development for Android, and my Master's thesis with IEEE 802.11ac standard simulation was done in Matlab.
+               </p>
+            </div>
+            <div class="col-4"> 
+               <img src="images/StudyLive1.png" alt="PictureProfilePlaceholder" class="about_img"> 
+            </div>
+			</div>
+            <div class="row">
+               <div class="col-4"> 
+                  <img src="images/WorkLive3.png" alt="PictureProfilePlaceholder" class="about_img"> 
+               </div>
+               <div class="col-8">
+                  <h3>Professional life</h3>
+                  <p>
+                     After school, I went to Bosch as a Preventive maintenance planner. The position also included general overhaul projects planning and budgeting but mainly, as the best part of the job, machine acceptance and pre-acceptance. I was 1 of 4 people responsible to check machine compliance with Bosch standards and Czech laws from the maintenance and safety of maintenance personnel safety view.
+                     The best part was traveling abroad and being next to cutting-edge technology manufacturing machines. I retain my excitement for manufacturing machinery and created a few of them in Fusion360. Recently I was able to find a sponsor for one and build a prototype.  
+                  </p>
+                  <p>
+                     A year came by and my manager noticed several Excel automatization improvements I created in VBA to make my and my colleague's life easier. So I got the opportunity to prove myself with Spindle machine analysis as my first data analyst project. 
+                     2 years after and I am a full-blown BI analyst. Meetings to define and polish KPI, creating SQL queries to emulate SAP transactions directly from backend tables, building pipelines in Python, managing MS SQL cache warehouse and creating dashboards in PowerBI.
+                  </p>
+                  <p>
+                     There were also a lot of opportunities to satisfy curiosity for new technology as part of a working group for Smart Glasses, Maintenance reporting and Predictive maintenance of Staubli robots. And the reason to leave all of this? Some once said people don't leave companies they leave managers. In my case, lack one of the best managers I could have after a forced move.
+                  </p>
+                  <p>
+                     After Bosch, I start working for Invicti Security as part of the newly emerging data analytics department where I could fully use my talent for data and systems. At the beginning do analysis in Excel to provide first overviews of features for product managers to support their roadmap decisions. Now analysis in tableau for Marketing and Product managers and helping to create a Self-service data platform in Snowflake. 
+                  </p>
+                  <p>
+                     In the future I would like to utilize my talent for programming more, so we will see where the next path will lead.
+                  </p>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-8">
+                  <h3>Personal life</h3>
+                  <p>
+                     A bit of an introvert, so not much here :)<br>
+                     Love my family, enthusiastic about self-development and coffee maniac :D
+                  </p>
+               </div>
+               <div class="col-4"> 
+               <img src="images/PersonalLive.png" alt="PictureProfilePlaceholder" class="about_img"> 
+            </div>
+            </div>
+      </main>
+      <footer>
+      <div>
+      <p>by <a href="https://www.linkedin.com/in/j-kvasnicka" style="animation: flicker 1.5s infinite alternate;">Jaroslav Kvasnicka</a></p>
+      </div>
+      </footer>
+      <script>
+         if (!localStorage.getItem('consentMode')) {
+         document.getElementById('cookie_consent').style.display = 'flex';
+         }else{
+         document.getElementById('cookie_consent').style.display = 'none';
+         }
+      </script>
+   </body>
+</html>

@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
    <head>
-      <!--Project start 2023-02-07-->
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width,initial-scale=1">
-      <meta name="description" content="Personal projects and portfolio of me">
-      <meta name="keywords" content="Data analytics, Fusion 360, Wood working">
-      <meta name="author" content="Jaroslav Kvasnicka">
-      <link rel="stylesheet" type="text/css" href="CSS/mystyle.css">
-      <link rel="stylesheet" type="text/css" href="CSS/bootstrap-grid.css">
-      <script src="JS/jk_scripts.js"></script>
-      <script>
+		<!--Project start 2023-02-07-->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="description" content="Personal projects and portfolio of me">
+		<meta name="keywords" content="Data analytics, Fusion 360, Wood working">
+		<meta name="author" content="Jaroslav Kvasnicka">
+		<link rel="stylesheet" type="text/css" href="CSS/mystyle.css">
+		<link rel="stylesheet" type="text/css" href="CSS/bootstrap-grid.css">
+		<script src="JS/jk_scripts.js"></script>
+		<script>
          // Define dataLayer and the gtag function.
          window.dataLayer = window.dataLayer || [];
          function gtag(){dataLayer.push(arguments);}
@@ -74,12 +74,12 @@
                            <span></span>
                            </label>
                            <ul class="menu__box">
-                              <li><span onclick="transitionToPage('./index.html')" class="menu__item">Home</span></li>
-                              <li><span onclick="transitionToPage('./about.html')" class="menu__item">About Me</span></li>
-                              <li><span onclick="transitionToPage('./portfolio.html')" class="menu__item">Portfolio</span></li>
-                              <li><span onclick="transitionToPage('./personalprojects.html')" class="menu__item">Personal projects</span></li>
-                              <li><span onclick="transitionToPage('./changelog.html')" class="menu__item">Website changelog</span></li>
-                              <li><a class="menu__item" href="https://www.linkedin.com/in/j-kvasnicka">LinkedIn</a></li>
+                             <li><span onclick="transitionToPage('./index.html')" class="menu__item">Home</span></li>
+							<li><span onclick="transitionToPage('./about.html')" class="menu__item">About Me</span></li>
+							<li><span onclick="transitionToPage('./portfolio.html')" class="menu__item">Portfolio</span></li>
+							<li><span onclick="transitionToPage('./personalprojects.html')" class="menu__item">Personal projects</span></li>
+							<li><span onclick="transitionToPage('./changelog.html')" class="menu__item">Website changelog</span></li>
+							<li><a class="menu__item" href="https://www.linkedin.com/in/j-kvasnicka">LinkedIn</a></li>
                            </ul>
                         </div>
                      </div>
@@ -87,13 +87,63 @@
                </div>
             </nav>
          </header>
+		 
+		 
          <main>
-            <div class="middle">
-               <h1>WORK IN PROGRESS<br></h1>
-               <h3 hidden>(And always will be)</h3>
-               <hr>
-               <p>Since the beginning of work on this site:</p>
-               <p id="demoscript" style="font-size:30px"></p>
+            <div style="position:relative; font-size:20px;text-align: justify;
+               text-justify: inter-word;">
+               <div class="row">
+                  <h1 style = "margin: 1em 0 0.5em 0; padding:0 0.5em 0 0.5em;" >Website changelog</h1>
+               </div>
+			   
+			   
+               <div class="changelog">
+					<p># Changelog
+						<br>
+						<br>All notable changes to this website will be documented in this page.
+						<br>The format is based on <a href="https://keepachangelog.com/en/1.0.0/"  style="color:white;">[Keep a Changelog]</a>
+						<br>
+						<br>
+						<br><br><br>## [Unreleased]
+						<br><br><br>## 2024-02-02
+						<br><br>### Added
+						<br>- Google Analytic integration for traffic monitoring to support decision how much time dedicate to this project.
+						<br>- Consent form to choice use of google analytics
+						<br>- Privacy policy to be comlaient with GDPR.
+						<br><br><br>## 2024-01-31
+						<br><br>### Added
+						<br>- Changelog website
+						<br>- Picture placeholders for About Me website replaced with pictures
+						<br><br>### Changed
+						<br>- Picture placeholders for About Me website replaced with pictures
+						<br><br><br>## 2023-07-02
+						<br><br>### Added
+						<br>- Index page
+						<br>- About me page
+						<br>- Personal project page
+						<br>- Portfolio page
+						<br><br>
+
+					</p>
+					
+					<p>## [Changes type example]</p>
+						<p>### <b>Added</b>
+						<br>- new features
+						<br><br>### <b>Changed</b>
+						<br>- changes in existing functionality
+						<br><br>### <b>Deprecated</b>
+						<br>- soon-to-be removed features
+						<br><br>### <b>Removed</b>
+						<br>- now removed features
+						<br><br>### <b>Fixed</b>
+						<br>- any bug fixes
+						<br><br>### <b>Security</b>
+						<br>- in case of vulnerabilities</p>
+
+						
+					
+				  
+               </div>
             </div>
          </main>
          <footer>
@@ -101,32 +151,6 @@
                <p>by <a href="https://www.linkedin.com/in/j-kvasnicka" style="animation: flicker 1.5s infinite alternate;">Jaroslav Kvasnicka</a></p>
             </div>
          </footer>
-      </div>
-      <script>
-         // Set the date we're counting down to
-         var countDownDate = new Date("Jun 16, 2023 10:37:25").getTime();
-         
-         // Update the count down every 1 second
-         var countdownfunction = setInterval(function() {
-         
-           // Get todays date and time
-           var now = new Date().getTime();
-           
-           // Find the distance between now an the count down date
-           var distance = now - countDownDate;
-           
-           // Time calculations for days, hours, minutes and seconds
-           var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-           var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-           var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-           var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-           
-           // Output the result in an element with id="demoscript"
-           document.getElementById("demoscript").innerHTML = days + "d " + hours + "h "
-           + minutes + "m " + seconds + "s ";
-           
-         }, 1000);
-      </script>
       <script>
          if (!localStorage.getItem('consentMode')) {
          document.getElementById('cookie_consent').style.display = 'flex';
@@ -134,5 +158,6 @@
          document.getElementById('cookie_consent').style.display = 'none';
          }
       </script>
+      </div>
    </body>
 </html>
